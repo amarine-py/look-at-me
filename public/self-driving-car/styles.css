@@ -1,7 +1,13 @@
 body {
     margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#shell {
+    margin: 0;
     background: darkgray;
     overflow: hidden;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +24,19 @@ button {
     cursor: pointer;
 }
 
+#inner {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
 button:hover {
     background-color: blue;
 }
 
 #networkCanvas {
     background: black;
+    height: 100%;
     
 }
 #carCanvas {
